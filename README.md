@@ -1,4 +1,4 @@
-# NSSF TWINLOOT Mitigation & Detection – Script Pack
+#  TWINLOOT Mitigation & Detection – Script Pack
 
 Companion scripts for `NSSF_TWINLOOT_Mitigation_Detection_Runbook.md` (v1.0, 18 Aug 2026).
 All scripts are PowerShell 5.1+ compatible. Hunt scripts are **read-only** unless
