@@ -7,7 +7,7 @@ marked accordingly.
 
 ## Folder structure
 
-### `01_Endpoint_Hunting/` (read-only, run per Runbook Section 41 "24-Hour Action Plan")
+### `01_Endpoint_Hunting/` (read-only)
 | Script  | What it does |
 |---|---|
 | `01_Python_Hunt.ps1` |  Finds python.exe/pythonw.exe/py.exe/pyw.exe, hashes them, flags user-writable/recent binaries |
