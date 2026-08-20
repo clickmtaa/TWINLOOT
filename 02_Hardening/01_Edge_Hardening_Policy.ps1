@@ -1,11 +1,10 @@
 <#
 .SYNOPSIS
-    NSSF TWINLOOT Runbook - Phase 4: Microsoft Edge Hardening
+    TWINLOOT Runbook - Phase 4: Microsoft Edge Hardening
 .DESCRIPTION
     Sets the Microsoft Edge enterprise policies HeadlessModeEnabled and
     RemoteDebuggingAllowed to Disabled via registry (equivalent to the Intune/GPO
-    ADMX settings). Intended for the pilot rollout described in Runbook Section 12
-    (ICT pilot -> Security pilot -> 10% -> 25% -> 50% -> 100%).
+    ADMX settings). 
 
     PREFERRED DEPLOYMENT: push via Intune/GPO ADMX (msedge.admx) rather than this
     script where central management is available. This script is provided for
