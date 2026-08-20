@@ -17,4 +17,16 @@ marked accordingly.
 | `05_ScheduledTask_TaskCache_Hunt.ps1` |  Flags risky scheduled task actions + dumps raw TaskCache for manual diff |
 | `06_Edge_CommandLine_Hunt.ps1` |  Flags `msedge.exe --headless` / `--remote-debugging-*`, especially with a python.exe parent (the "golden detection") |
 
+
+### `02_Hardening/` (changes system/policy state — pilot first)
+| Script |  What it does |
+|---|---|
+| `01_Edge_Hardening_Policy.ps1` | Sets `HeadlessModeEnabled` and `RemoteDebuggingAllowed` to Disabled. Prefer Intune/GPO ADMX for fleet rollout; this script is for pilot/standalone use. Supports `-WhatIf`. |
+| `02_PowerShell_Logging_Enable.ps1` | Enables Script Block Logging, Module Logging, Transcription. Prefer GPO for fleet rollout. Supports `-WhatIf`. |
+
+
+
+
+
+
 -Graham
