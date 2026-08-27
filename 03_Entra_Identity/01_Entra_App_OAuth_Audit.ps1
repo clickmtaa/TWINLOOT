@@ -119,6 +119,6 @@ $riskyGrants | Export-Csv -Path $grantsFile -NoTypeInformation -Encoding UTF8
 Write-Host "[*] Application inventory: $appInventoryFile ($($appInventory.Count) apps, $((($appInventory|Where-Object RecentlyCreated).Count)) recent)" -ForegroundColor Green
 Write-Host "[*] Service principal register: $spFile ($($spRegister.Count) principals)" -ForegroundColor Green
 Write-Host "[*] High-risk OAuth grants: $grantsFile ($($riskyGrants.Count) flagged)" -ForegroundColor Green
-Write-Host "[i] Cross-reference recently created apps + broad Graph permissions + unknown owner = High severity per Runbook Section 19." -ForegroundColor Yellow
+Write-Host "[i] Cross-reference recently created apps + broad Graph permissions + unknown owner = High severity." -ForegroundColor Yellow
 
 Disconnect-MgGraph | Out-Null
